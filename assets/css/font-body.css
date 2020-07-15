@@ -1,0 +1,82 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'RobotoBold';
+    src: url('../fonts/roboto/Roboto-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans/OpenSans-Regular.ttf');
+}
+
+
+:root{
+    --header-font: 'RobotoBold';
+    --text-font: 'Roboto';
+    --button-font: 'OpenSans';
+    --main-color : #00AEFF;
+    --secondary-color2 : #24116a;
+    --link-color : #084482;
+    --light-color : #F4F4F4;
+    --bright-color : #fff;
+    --dark-color : #000;
+    --place-holder: #c4c4c4;
+    --input-stroke: #E5E5E5;
+}
+
+.main_con{
+    min-height: 100vh !important;
+}
+
+.containe{
+    width: 90% !important;
+    margin: 0 auto !important;
+}
+
+button{
+    border: none;
+    font-family: var(--button-font);
+    font-size: 16px;
+    color: var(--bright-color);
+    background: var(--main-color);
+    height: 50px;
+    width: fit-content;
+    padding: 0 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label{
+    font-size: 16px !important;
+}
+
+input{
+    width: 100% !important;
+    height: 60px !important;
+    padding-left: 15px !important;
+    border: 1px solid var(--input-stroke);
+}
+
+
+::placeholder{
+    font-size: 16 !important;
+    color: var(--place-holder);
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .containe{
+        width: 80% !important;
+    }    
+}
+
+@media only screen and (min-width: 1200px){
+    .containe{
+        width: 1200px !important;
+    }
+}
