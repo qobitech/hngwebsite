@@ -15,6 +15,7 @@
     <link href="./assets/css/fontawesome/fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet"> 
     <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/animate.css" rel="stylesheet">
+    <link href="./assets/css/theme.css" rel="stylesheet">
     <link href="./assets/css/font-body.css" rel="stylesheet">
     <link href="./assets/css/header-footer.css" rel="stylesheet">
     
@@ -28,22 +29,54 @@
 
     <div class="d-flex flex-column w-100 m-0 p-0 main_con">
 
-        <header>
-
+        <header class="header_nav">
+            <div class="m-0 p-0 w-100 header_sub" >
+                <div class="containe m-0 p-0 mx-auto">
+                    <nav class="navbar navbar-expand-lg navbar-light main_nav_mb p-0">
+                        <a class="navbar-brand company_name" href="#" style="border:0px solid black">
+                            <span style="color:var(--main-color);font-family: var(--header-font);">HNG INTERNSHIP</span>
+                            <!-- <img src="./assets/images/logo/image 2.png" alt=""> -->
+                        </a>
+                        <button class="outside outside_btn_nav_qobi">Join Us</button>
+                        <button class="navbar-toggler nav_btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon hamburger_icon" ></span>
+                        <img src="./assets/images/icon/close.svg" class="close_icon hide" alt="">
+                        </button>
+                        
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" >
+                            <div class="navbar-nav align-items-center" >
+                                <a class="nav-item nav-link active header_a" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link header_a linkcolor" href="#">About</a>
+                                <a class="nav-item nav-link header_a linkcolor" href="#">HNGi7</a>
+                                <a class="nav-item nav-link header_a linkcolor" href="#">Mentors</a>
+                                <a class="nav-item nav-link header_a linkcolor" href="#">Contact Us</a>
+                                <button class="inside_btn_nav_qobi">Join Us</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </header>
     
         <main>
             
             <!-- hero -->
             <section class="hero w-100 m-0 p-0">
-                <div class="m-0 p-0 containe py-5">
+                <div class="wow fadeIn m-0 p-0 containe py-5" data-wow-delay=".4s">
                     <div class="d-flex flex-column justify-content-center w-100 m-0 p-0 py-5">
-                        <div class="header col-sm-12 col-md-6 col-lg-6 col-xl-6 m-0 p-0 pt-5">
-                            <h1 class="m-0 desktop_view">Welcome to <br/> HNG Internship 8</h1>
-                            <h1 class="m-0 mobile_view">Welcome to HNG Internship 8</h1>
+                        <div class="wow fadeInLeft header col-sm-12 col-md-6 col-lg-6 col-xl-6 m-0 p-0 pt-5" data-wow-delay=".6s">
+                            <h1 class="m-0 desktop_view">Welcome to <br/> HNG 8.0 Internship</h1>
+                            <h1 class="m-0 mobile_view">Welcome to HNG 8.0 Internship</h1>
                         </div>
                         <div class="body col-sm-12 col-md-6 col-lg-6 col-xl-6 m-0 p-0 pt-4" >
-                            <h4 class="m-0">The Number #1 Virtual Global Internship for tech enthusiasts</h4>
+                            <h4 class="m-0">
+                                The <span style="color:var(--main-color);font-family:var(--header-font)" 
+                                        class="wow fadeInLeft" data-wow-delay=".6s">#1</span> 
+                                Global Virtual Internship for tech enthusiasts.
+                            </h4>
+                        </div>
+                        <div class="wow fadeInUp body col-sm-12 col-md-6 col-lg-6 col-xl-6 m-0 p-0 pt-4" data-wow-delay="1s">
+                            <button>Get Started</button>
                         </div>
                         
                     </div>
@@ -57,19 +90,25 @@
                         <div class="logo_container">
                             <img src="./assets/images/logo/[ ] (1) 1.png" alt="">
                         </div>
-                        <form class="m-0">
+                        <form class="wow fadeInRight m-0" data-wow-delay=".6s">
                             <div class="my-2 p-0 input_holder">
                                 <div class="header m-0 p-0 w-100 pb-4">
-                                    <h4 class="m-0 p-0">Register for HNG Internship 8</h4>
+                                    <h4 class="m-0 p-0">Register for HNG 8.0 Internship</h4>
                                 </div>
                                 <div class="body m-0 p-0 input_holder">
                                     <div class="d-flex flex-column m-0 p-0 pt-2 pb-3">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" placeholder="Full Name" required>
+                                        <label for="name">Email</label>
+                                        <input type="email" name="name" placeholder="Enter Email Address" required>
                                     </div>
                                     <div class="d-flex flex-column m-0 p-0 pt-2 pb-3">
-                                        <label for="email">Email</label>
-                                        <input type="text" name="email" placeholder="Enter Email Address" required>
+                                        <label for="track">Track</label>
+                                        <select name="track" id="">
+                                            <option value="Front End">Select Track</option>
+                                            <option value="Front End">Front End Track</option>
+                                            <option value="Front End">Back End Track </option>
+                                            <option value="Front End">UI / UX Track</option>
+                                        </select>
+                                        <!-- <input type="text" name="email" placeholder="Enter Email Address" required> -->
                                     </div>
                                     <div class="m-0 p-0 pt-4 w-100 text-right">
                                         <button>Continue Registration</button>
@@ -84,18 +123,17 @@
             <!-- about -->
             <section class="about m-0 p-0 w-100">
                 <div class="m-0 p-0 containe py-5">
-                    <div class="m-0 p-0 w-100 d-flex flex-column">
+                    <div class="wow fadeIn m-0 p-0 w-100 d-flex flex-column" data-wow-delay=".4s">
                         <div class="w-100 m-0 p-0 text-left py-5">
                             <h2 class="m-0 p-0">ABOUT HNG</h2>
                         </div>
                         <div class="w-100 m-0 p-0 text-left col-sm-12 col-md-12 col-lg-12 col-xl-8">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
+                                The HNG Internship is an ambitious attempt to change the way education is done in Africa. 
+                                It’s the bridge between learning to code and becoming the best in the world.
                             </p>
                         </div>
-                        <div class="w-100 m-0 p-0">
+                        <div class="wow fadeInUp w-100 m-0 p-0" data-wow-delay=".6s">
                             <h6>Learn More</h6>
                         </div>
                     </div>
@@ -105,57 +143,60 @@
             <!-- about - description slider-->
             <section class="about_description m-0 p-0 pb-5 w-100">
                 <div class="m-0 p-0 containe pt-0 pb-5">
-                    <div class="w-100 p-0 m-0 pb-2 justify-content-between about_description_content">
 
-                        <!-- manual navigation -->
-                        <div class="d-flex navigation_items w-100 m-0 p-0 py-3 justify-content-between">
-                            <span>&#8592;</span>
-                            <span>&#8594;</span>
-                        </div>
+                    <div class="wow fadeIn row p-0 m-0 justify-content-between align-items-start" data-wow-delay=".4s">
 
-                        <div class="about_description_item m-0 p-0 py-5">
-                            <div class="img_container m-0 p-0">
-                                <img src="./assets/images/about/Rectangle 30 (1).png" alt="">
-                            </div>
-                            <div class="txt_container m-0 p-0 mx-auto pt-5">
-                                <div class="header m-0 p-0 w-100 text-left pb-3">
-                                    <h3>GLOBAL OUTREACH</h3>
-                                </div>
-                                <div class="header m-0 p-0 w-100 text-left">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Quaerat nobis exercitationem et.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about_description_item m-0 p-0 py-5">
-                            <div class="img_container m-0 p-0">
+                        <!-- 1st column -->
+                        <div class="wow fadeInRight m-0 p-0 py-5 col-sm-12 col-md-6 col-lg-6 col-xl-4 justify-content-center content" data-wow-delay=".4s">
+                            <div class="img_container m-0 p-0 mx-auto text-center">
                                 <img src="./assets/images/about/Rectangle 31.png" alt="">
                             </div>
                             <div class="txt_container m-0 p-0 mx-auto pt-5">
                                 <div class="header m-0 p-0 w-100 text-left pb-3">
-                                    <h3>QUALITY</h3>
+                                    <h3>Remote Learning</h3>
                                 </div>
                                 <div class="header m-0 p-0 w-100 text-left">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Quaerat nobis exercitationem et.
+                                    <p>Our aim is to help everyone willing to kick-start a career in tech without 
+                                        distance being a barrier. We have made our internship flexible to 
+                                        accommodate you regardless of your location or timezone.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="about_description_item m-0 p-0 py-5">
-                            <div class="img_container m-0 p-0">
+
+                        <!-- 2nd column -->
+                        <div class="wow fadeInRight m-0 p-0 py-5 col-sm-12 col-md-6 col-lg-6 col-xl-4 justify-content-center content" data-wow-delay=".6s">
+                            <div class="img_container m-0 p-0 mx-auto text-center">
+                                <img src="./assets/images/about/Rectangle 62.png" alt="">
+                            </div>
+                            <div class="txt_container m-0 p-0 mx-auto pt-5">
+                                <div class="header m-0 p-0 w-100 text-left pb-3">
+                                    <h3>Collaborate with Creatives</h3>
+                                </div>
+                                <div class="header m-0 p-0 w-100 text-left">
+                                    <p>The HNG Internship gives room for effective teamwork while interns work on real-life projects. 
+                                        You get the chance to collaborate with other creatives from different parts of the world, 
+                                        which prepares you for future team collaborations outside the internship.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd column -->
+                        <div class="wow fadeInRight m-0 p-0 pt-5 col-sm-12 col-md-6 col-lg-6 col-xl-4 justify-content-center content" data-wow-delay=".8s">
+                            <div class="img_container m-0 p-0 mx-auto text-center">
                                 <img src="./assets/images/about/Rectangle 32.png" alt="">
                             </div>
                             <div class="txt_container m-0 p-0 mx-auto pt-5">
-                                    <div class="header m-0 p-0 w-100 text-left pb-3">
-                                        <h3>PROFESSIONALISM</h3>
-                                    </div>
-                                    <div class="header m-0 p-0 w-100 text-left">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Quaerat nobis exercitationem et.
-                                        </p>
-                                    </div>
+                                <div class="header m-0 p-0 w-100 text-left pb-3">
+                                    <h3>Build Portfolio</h3>
+                                </div>
+                                <div class="header m-0 p-0 w-100 text-left">
+                                    <p>During the course of the internship, you will be introduced to different projects to work on. 
+                                        These projects could be added to your portfolio as quality samples to put you ahead of 
+                                        the competition when job hunting.
+                                    </p>
+                                </div>
                             </div>    
                         </div>
                     </div>
@@ -164,42 +205,52 @@
 
             <!-- mission -->
             <section class="mission w-100 m-0 p-0">
+
                 <div class="m-0 p-0 containe" >
-                    <div class="d-flex m-0 p-0 pb-5 justify-content-end mission_content">
-                        <div class="bg_img">
-                            <img src="./assets/images/logo/mission.png" alt="">
-                        </div>
-                        <div class="m-0 p-0 d-flex flex-column title_statement">
-                            <div class="m-0 p-0 text-left py-5 mt-5 header">
-                                <h2 class="m-0 p-0">MISSION</h2>
+                    
+                    <div class="wow fadeIn row m-0 p-0 justify-content-between align-items-center" data-wow-delay=".4s">
+                        
+                        <!-- 1st column -->
+                        <div class="m-0 p-0 d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="m-0 p-0 text-left py-5 header">
+                                <h2 class="m-0 p-0">APPLY TO BE AN INTERN</h2>
                             </div>
-                            <div class="m-0 p-0 text-left body">
+                            <div class="wow fadeInUp m-0 p-0 text-left body" data-wow-delay=".8s">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                    modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                    quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
+                                    The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers. 
+                                    Everyone is welcomed to participate (there is no entrance exam). 
+                                    Anyone can log into the internship using their laptop. 
                                 </p>
                             </div>
+                            <div class="m-0 p-0 text-left body py-4">
+                                <button>Get Started</button>
+                            </div>
+                            
                         </div>
-                        <div class="m-0 p-0 img_container pb-5 text-center">
-                            <img src="./assets/images/mission/Ellipse 6.png" alt="">
+    
+                        <!-- second column -->
+                        <div class="wow fadeInRight m-0 p-0 pb-5 text-center col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto" data-wow-delay=".6s">
+                            <img src="./assets/images/mission/Ellipse 6.png" class="desktop_view" alt="">
+                            <img src="./assets/images/mobile/mission/Ellipse 6 (1).png" class="mobile_view mx-auto" alt="">
                         </div>
+
                     </div>
-                </div>                
+                </div>
+
             </section>
 
             <!-- values -->
             <section class="values m-0 p-0 w-100">
                 <div class="m-0 p-0 containe py-5">
-                    <div class="m-0 p-0 w-100 d-flex flex-column">
+                    <div class="wow fadeIn m-0 p-0 w-100 d-flex flex-column" data-wow-delay=".4s">
                         <div class="w-100 m-0 p-0 text-left py-5">
-                            <h2 class="m-0 p-0">VALUES</h2>
+                            <h2 class="m-0 p-0">WHAT YOU GET TO LEARN </h2>
                         </div>
-                        <div class="w-100 m-0 p-0 text-left col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                        <div class="wow fadeInUp w-100 m-0 p-0 text-left col-sm-12 col-md-12 col-lg-12 col-xl-8" data-wow-delay=".6s">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
+                                Purpose is undeniably critical for greater aspiration. <br>Here at HNG,
+                                we expose you to the reality of what it takes to be the best in your chosen field 
+                                of study.
                             </p>
                         </div>
                     </div>
@@ -208,83 +259,74 @@
                 
             <section class="m-0 p-0 w-100 value_content">
 
-                <div class="bg_value w-100 m-0 p-0"></div>
+                <div class="desktop_view bg_value w-100 m-0 p-0"></div>
 
                 <div class="m-0 p-0 containe py-5">
-                    <div class="d-flex flex-column m-0 p-0 pb-5 w-100 content">
+                    <div class="wow fadeIn d-flex flex-column m-0 p-0 pb-5 w-100 content" data-wow-delay=".4s">
 
-                        <div class="d-flex m-0 p-0 first_value justify-content-end">
-                            <div class="m-0 p-0 img_container">
-                                <img src="./assets/images/values/work-ethic/Rectangle 19.png" alt="">
+                        <div class="wow fadeInLeft d-flex m-0 p-0 first_value justify-content-end" data-wow-delay=".6s">
+                            <div class="m-0 p-0 img_container" >
+                                <img class="desktop_view" src="./assets/images/values/work-ethic/Rectangle 19.png" alt="">
+                                <img class="mobile_view" src="./assets/images/mobile/value/work ethics/Rectangle 19.png" alt="">
                             </div>
                             <div class="d-flex m-0 p-0 text_container align-items-center">
                                 <div class="txt m-0 p-0 mx-auto">
                                     <div class="header w-100 m-0 p-0 pb-3 text-left">
-                                        <h3>WORK ETHIC</h3>
+                                        <h3>Work Ethic</h3>
                                     </div>
                                     <div class="body w-100 m-0 p-0 text-left">
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Modi nihil excepturi repellat at fuga! Obcaecati tenetur amet 
-                                            veritatis sapiente iste odit nam cupiditate, 
-                                            dolores tempore quibusdam porro praesentium ratione eum?
+                                            At HNG, you learn to be a professional, to deliver the best projects at the right time. 
+                                            To cultivate the mindset of a goal-getter.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="d-flex m-0 p-0 second_value justify-content-start">
+                        <div class="wow fadeInRight d-flex m-0 p-0 second_value justify-content-start" data-wow-delay=".6s">
                             <div class="d-flex m-0 p-0 text_container align-items-center">
                                 <div class="txt m-0 p-0 mx-auto">
                                     <div class="header w-100 m-0 p-0 pb-3 text-left">
-                                        <h3>SKILL IMPROVEMENT</h3>
+                                        <h3>Skill improvement</h3>
                                     </div>
                                     <div class="body w-100 m-0 p-0 text-left">
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Modi nihil excepturi repellat at fuga! Obcaecati tenetur amet 
-                                            veritatis sapiente iste odit nam cupiditate, 
-                                            dolores tempore quibusdam porro praesentium ratione eum?
+                                            Throughout the internship, you will work on scalable products. 
+                                            This will give you an insight into real-world projects and prepare you 
+                                            for more challenging tasks as you take on real-time jobs after the internship.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="m-0 p-0 img_container">
-                                <img src="./assets/images/values/skill improvement/Rectangle 22.png" alt="">
+                                <img class="desktop_view" src="./assets/images/values/skill improvement/Rectangle 22.png" alt="">
+                                <img class="mobile_view" src="./assets/images/mobile/value/skill improvement/Rectangle 22.png" alt="">
                             </div>
                         </div>
                         
-                        <div class="d-flex m-0 p-0 third_value justify-content-end">
+                        <div class="wow fadeInUp d-flex m-0 p-0 third_value justify-content-end" data-wow-delay=".4s">
+                            
                             <div class="d-flex flex-column m-0 p-0 img_container_main">
                                 <div class="d-flex m-0 p-0 w-100 top_container">
                                     <div class="m-0 p-0 img_container">
-                                        <img src="./assets/images/values/teamwork/Rectangle 33.png" alt="">
+                                        <img class="" src="./assets/images/values/teamwork/photo-of-people-holding-each-other-s-hands-3184423 1.png" alt="">
+                                        
                                     </div>
-                                    <div class="m-0 p-0 img_container">
-                                        <img src="./assets/images/values/teamwork/Rectangle 34.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="d-flex m-0 p-0 w-100 bottom_container">
-                                    <div class="m-0 p-0 img_container">
-                                        <img src="./assets/images/values/teamwork/Rectangle 36.png" alt="">
-                                    </div>
-                                    <div class="m-0 p-0 img_container">
-                                        <img src="./assets/images/values/teamwork/Rectangle 35.png" alt="">
-                                    </div>
+                                    
                                 </div>
                             </div>
+
                             <div class="d-flex m-0 p-0 text_container align-items-center">
                                 <div class="txt m-0 p-0 mx-auto">
                                     <div class="header w-100 m-0 p-0 pb-3 text-left">
-                                        <h3>TEAM WORK</h3>
+                                        <h3>Team Work</h3>
                                     </div>
                                     <div class="body w-100 m-0 p-0 text-left">
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Modi nihil excepturi repellat at fuga! Obcaecati tenetur amet 
-                                            veritatis sapiente iste odit nam cupiditate, 
-                                            dolores tempore quibusdam porro praesentium ratione eum?
+                                            Expand your knowledge with new challenging tasks and kick-start your career in tech. 
+                                            This is also a chance to connect with valuable and efficient 
+                                            teammates across the globe from the comfort of your home.
                                         </p>
                                     </div>
                                 </div>
@@ -295,110 +337,40 @@
                 </div>
             </section>
 
-            <!-- stake holders -->
-            <section class="stakeholder m-0 p-0 w-100">
-                <div class="m-0 p-0 containe pb-5">
-                    <div class="m-0 p-0 w-100 d-flex flex-column">
-                        <div class="w-100 m-0 p-0 text-left py-5">
-                            <h2 class="m-0 p-0">STAKE HOLDERS</h2>
+            <!-- choose a track -->
+            <section class="sponsor m-0 p-0 w-100 pb-5 mb-5">
+                <div class="bg m-0 p-0 py-5">
+                    <div class="wow fadeIn m-0 p-0 containe h-100 py-5" data-wow-delay=".4s">
+                        <div class="wow fadeInDown w-100 text-center" data-wow-delay=".6s">
+                            <h2>What Are You Interested In ?</h2>
                         </div>
-                        <div class="w-100 m-0 p-0 text-left col-sm-12 col-md-12 col-lg-12 col-xl-8">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
-                            </p>
+                        <div class="wow fadeInUp w-100 row justify-content-center m-0 p-0 align-items-start mt-5" data-wow-delay=".6s">
+                            <div class="d-flex flex-column justify-content-center align-items-center m-0 p-0 mx-auto text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 py-5">
+                                <select name="" id="" class="m-0 mb-5">
+                                    <option value="FrontEnd">Select Track</option>
+                                    <option value="FrontEnd">FrontEnd Track</option>
+                                    <option value="FrontEnd">BackEnd Track</option>
+                                    <option value="FrontEnd">Machine Learning Track</option>
+                                    <option value="FrontEnd">UI / UX Track</option>
+                                </select>
+                                <button>Continue</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            <section class="stakeholder_value m-0 p-0 w-100">
-                <div class="m-0 p-0 containe pb-5">
-                    <div class="d-flex flex-column m-0 p-0 w-100">
-                        
-                        <div class="d-flex m-0 p-0 w-100 align-items-stretch content">
-                            <div class="m-0 p-0 txt_container">
-                                <div class="d-flex bg_img_container m-0 p-0 align-items-center h-100">
-                                    <img src="./assets/images/logo/Vector.png" alt="">
-                                </div>
-                                <div class="d-flex flex-column h-100 justify-content-center txt">
-                                    <div class="header m-0 p-0 pb-3">
-                                        <h3>INTERNS</h3>
-                                    </div>
-                                    <div class="body">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                            Reiciendis quis laborum dolores maxime dolor illo odio aspernatur 
-                                            fugit deleniti unde tenetur sequi quia, accusamus ea a 
-                                            molestiae placeat? Dolore, nisi.
-                                        </p>
-                                    </div>
-                                </div>          
-                            </div>
-                            <div class="m-0 p-0 img_container">
-                                <img src="./assets/images/stakeholders/interns/Rectangle 28-1.png" alt="">
-                            </div>
-                        </div>
 
-                        <div class="d-flex m-0 p-0 w-100 align-items-stretch content">
-                            <div class="m-0 p-0 txt_container">
-                                <div class="d-flex bg_img_container m-0 p-0 align-items-center h-100">
-                                    <img src="./assets/images/logo/Vector.png" alt="">
-                                </div>
-                                <div class="d-flex flex-column h-100 justify-content-center txt">
-                                    <div class="header m-0 p-0 pb-3">
-                                        <h3>MENTORS</h3>
-                                    </div>
-                                    <div class="body">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                            Reiciendis quis laborum dolores maxime dolor illo odio aspernatur 
-                                            fugit deleniti unde tenetur sequi quia, accusamus ea a 
-                                            molestiae placeat? Dolore, nisi.
-                                        </p>
-                                    </div>
-                                </div>          
-                            </div>
-                            <div class="m-0 p-0 img_container">
-                                <img src="./assets/images/stakeholders/mentors/Rectangle 28.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-column m-0 p-0 w-100 align-items-end content_partners">
-                            <div class="header m-0 p-0 py-5">
-                                <h3>PARTNERS</h3>
-                            </div>
-                            <div class="d-flex m-0 p-0 py-5 img_container justify-content-between">
-                                <img src="./assets/images/stakeholders/partners/Ellipse 7.png" alt="">
-                                <img src="./assets/images/stakeholders/partners/Ellipse 7.png" alt="">
-                                <img src="./assets/images/stakeholders/partners/Ellipse 7.png" alt="">
-                                <img src="./assets/images/stakeholders/partners/Ellipse 7.png" alt="">
-                            </div>
-                            <div class="d-flex m-0 p-0 py-5 img_container justify-content-between">
-                                <img src="./assets/images/stakeholders/partners/Ellipse 7.png" alt="">
-                                <img src="./assets/images/stakeholders/partners/Ellipse 7.png" alt="">
-                                <img src="./assets/images/stakeholders/partners/Ellipse 7.png" alt="">
-                                <img src="./assets/images/stakeholders/partners/Ellipse 7.png" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
 
             <!-- activities -->
             <section class="activities m-0 p-0 w-100">
                 <div class="m-0 p-0 containe ">
-                    <div class="m-0 p-0 w-100 d-flex flex-column pb-5">
-                        <div class="w-100 m-0 p-0 text-left py-5">
-                            <h2 class="m-0 p-0">    ACTIVITIES</h2>
+                    <div class="wow fadeIn m-0 p-0 w-100 d-flex flex-column pb-5" data-wow-delay=".4s">
+                        <div class="w-100 m-0 p-0 text-left pb-5">
+                            <h2 class="m-0 p-0">SCHEDULED ACTIVITIES</h2>
                         </div>
-                        <div class="w-100 m-0 p-0 text-left col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                        <div class="wow fadeInUp w-100 m-0 p-0 text-left col-sm-12 col-md-12 col-lg-12 col-xl-8" data-wow-delay=".6s">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
+                                Browse through the list of exciting activites we've planned for HNG 8.0 Internship. 
                             </p>
                         </div>
                     </div>
@@ -408,7 +380,7 @@
             <section class="activities_value m-0 p-0 w-100">
                 <div class="m-0 p-0 containe">
                     
-                    <div class="d-flex flex-column align-items-start m-0 p-0 w-100 content">
+                    <div class="wow fadeInRight d-flex flex-column align-items-start m-0 p-0 w-100 content" data-wow-delay=".6s">
                         
                         <div class="d-flex main_activity">                   
                             <div class="date_content m-0 p-0 py-5">
@@ -418,18 +390,20 @@
                                 </div>
                             </div>
 
-                            <div class="activity_txt_content m-0 p-0 py-5">
+                            <div class="activity_txt_content m-0 p-0 py-5 hide_element">
                                 <div class="d-flex flex-column m-0 p-0 mx-auto m_content py-4">
                                     <h3 class="m-0 p-0 mb-3">Main Content I</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                        modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                        quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
+                                        modi eveniet? Aliquid sunt quia numquam nisi possimus rem.
                                     </p>
                                 </div>
                             </div>
-
+                            <div class="m-0 p-0 w-100 text-center py-4 expand_container">
+                                <p class="expand_link">View Activity</p>
+                            </div>
                         </div>
+
 
                         <div class="d-flex main_activity">                   
                             <div class="date_content m-0 p-0 py-5">
@@ -439,19 +413,21 @@
                                 </div>
                             </div>
 
-                            <div class="activity_txt_content m-0 p-0 py-5">
+                            <div class="activity_txt_content m-0 p-0 py-5 hide_element">
                                 <div class="d-flex flex-column m-0 p-0 mx-auto m_content py-4">
                                     <h3 class="m-0 p-0 mb-3">Main Content I</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                        modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                        quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
+                                        modi eveniet? Aliquid sunt quia numquam nisi possimus rem.
                                     </p>
                                 </div>
                             </div>
+                            <div class="m-0 p-0 w-100 text-center py-4 expand_container">
+                                <p class="expand_link">View Activity</p>
+                            </div>
                         </div>
 
-                        <div class="d-flex main_activity m-0">                   
+                        <div class="d-flex main_activity m-0 mb-1">                   
                             <div class="date_content m-0 p-0 py-5">
                                 <div class="d-flex flex-column m-0 p-0 mx-auto d_content py-4">
                                     <h3 class="m-0 p-0 mb-3">January</h3>
@@ -459,18 +435,20 @@
                                 </div>
                             </div>
 
-                            <div class="activity_txt_content m-0 p-0 py-5">
+                            <div class="activity_txt_content m-0 p-0 py-5 hide_element">
                                 <div class="d-flex flex-column m-0 p-0 mx-auto m_content py-4">
                                     <h3 class="m-0 p-0 mb-3">Main Content I</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                        modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                        quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
+                                        modi eveniet? Aliquid sunt quia numquam nisi possimus rem.
                                     </p>
                                 </div>
                             </div>
-
+                            <div class="m-0 p-0 w-100 text-center py-4 expand_container">
+                                <p class="expand_link">View Activity</p>
+                            </div>
                         </div>
+
                     </div>
 
                     <div class="m-0 p-0 py-5 expand_content text-center">
@@ -479,18 +457,155 @@
                 </div>
             </section>
 
-            <!-- hngi7 -->
-            <section class="past_interns m-0 p-0 w-100">
-                <div class="m-0 p-0 containe">
-                    <div class="header m-0 p-0 w-100 text-center py-5">
-                        <h3>HNG INTERNSHIP 7.0</h3>
+            <!-- stake holders -->
+            <section class="stakeholder m-0 p-0 w-100">
+                <div class="wow fadeIn m-0 p-0 containe py-5" data-wow-delay=".4s">
+                    <div class="m-0 p-0 w-100 d-flex flex-column">
+                        <div class="w-100 m-0 p-0 text-left py-5">
+                            <h2 class="m-0 p-0">MEET OUR DEDICATED MENTORS</h2>
+                        </div>
+                        <div class="wow fadeInUp w-100 m-0 p-0 text-left col-sm-12 col-md-12 col-lg-12 col-xl-8" data-wow-delay=".6s">
+                            <p>
+                                The Mentors are responsible for managing and co-ordinating all activites on 
+                                the HNG platform. 
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="bg">
-                    <div class="m-0 p-0 containe h-100">
-                        <div class="d-flex call_action h-100 m-0 p-0 mx-auto pb-5 align-items-end justify-content-between">
-                            <button>Learn More</button>
-                            <button>Meet The Finalists</button>
+            </section>
+            
+            <section class="stakeholder_value m-0 p-0 w-100">
+                <div class="m-0 p-0 containe pb-5">
+                    <div class="wow fadeInRight d-flex flex-column m-0 p-0 w-100" data-wow-delay=".4s">                            
+                        
+                        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                            
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/stakeholders/mentors/Rectangle 28.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img src="./assets/images/stakeholders/interns/Rectangle 28-1.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img src="./assets/images/stakeholders/mentors/Rectangle 28.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stakeholder m-0 p-0 w-100">
+                <div class="wow fadeIn m-0 p-0 containe pt-5" data-wow-delay=".4s">
+                    <div class="m-0 p-0 w-100 d-flex flex-column">
+                        <div class="w-100 m-0 p-0 text-left pt-5">
+                            <h2 class="m-0 p-0">PARTNERS</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stakeholder_value m-0 p-0 w-100">
+                <div class="wow fadeInUp m-0 p-0 containe pb-5" data-wow-delay=".6s">
+                    <div class="d-flex flex-column m-0 p-0 w-100 content_partners">                            
+    
+                        <!-- manual navigation -->
+                        <div class="d-flex navigation_items w-100 m-0 p-0 py-3 justify-content-between">
+                            <span id="partner_nav_left">&#8592;</span>
+                            <span id="partner_nav_right">&#8594;</span>
+                        </div>
+
+                        <div class="partner_gallery m-0 p-0" id="partners_div">
+                            <div class="m-0 p-0 img_content">
+                                <img src="./assets/images/stakeholders/partners/hotels-logo_x3icbw.svg" alt="">
+                            </div>
+                            <div class="m-0 p-0 img_content">
+                                <img src="./assets/images/stakeholders/partners/kudaBank.png" alt="">
+                            </div>
+                            <div class="m-0 p-0 img_content">
+                                <img src="./assets/images/stakeholders/partners/verifi-logo_nfckrw.svg" alt="">
+                            </div>
+                            <div class="m-0 p-0 img_content">
+                                <img src="./assets/images/stakeholders/partners/piggyvestLogo.png" alt="">
+                            </div>
+                            <div class="m-0 p-0 img_content">
+                                <img src="./assets/images/stakeholders/partners/google-nigeria.png" alt="">
+                            </div>
+                            <div class="m-0 p-0 img_content">
+                                <img src="./assets/images/stakeholders/partners/flutterwave-logo_nyv9ue.svg" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="w-100 m-0 p-0 py-5 text-center">
+                            <button>Become A Sponsor</button>
+                        </div>
+    
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- hngi7 -->
+            <section class="sponsor m-0 p-0 w-100 py-5">
+                <div class="bg m-0 p-0 py-5">
+                    <div class="wow fadeIn m-0 p-0 containe h-100 py-5" data-wow-delay=".4s">
+                        <div class="w-100 text-center">
+                            <h2>Support The Movement</h2>
+                        </div>
+                        <div class="w-100 row justify-content-between align-items-start mt-5">
+                            <div class="wow fadeInRight m-0 p-0 text-center col-sm-12 col-md-6 col-lg-4 col-xl-4 py-5" data-wow-delay=".6s">
+                                <span>
+                                    <img src="./assets/images/sponsor/coin.svg" alt="">
+                                </span>
+                                <h5 class="mb-4">Donate to the Program</h5>
+                                <button>GetStarted</button>
+                            </div>
+                            <div class="wow fadeInRight m-0 p-0 text-center col-sm-12 col-md-6 col-lg-4 col-xl-4 py-5" data-wow-delay=".6s">
+                                <span>
+                                    <img src="./assets/images/sponsor/partner.svg" alt="">
+                                </span>
+                                <h5 class="mb-4">Become a Sponsor</h5>
+                                <button>GetStarted</button>
+                            </div>
+                            <div class="wow fadeInRight m-0 p-0 text-center col-sm-12 col-md-6 col-lg-4 col-xl-4 py-5" data-wow-delay=".6s">
+                                <span>
+                                    <img src="./assets/images/sponsor/monitor.svg" alt="">
+                                </span>
+                                <h5 class="mb-4">Sponsor via Software or Tool</h5>
+                                <button>GetStarted</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -499,20 +614,19 @@
             <!-- contact -->
             <section class="contact m-0 p-0 w-100">
                 <div class="m-0 p-0 containe">
-                    <div class="m-0 p-0 w-100 d-flex flex-column py-5 my-5">
+                    <div class="wow fadeIn m-0 p-0 w-100 d-flex flex-column pb-5 my-5" data-wow-delay=".4s"> 
                         <div class="w-100 m-0 p-0 text-left py-5">
                             <h2 class="m-0 p-0">CONTACT US</h2>
                         </div>
-                        <div class="w-100 m-0 p-0 text-left row align-items-center" >
+                        <div class="wow fadeInUp w-100 m-0 p-0 text-left row align-items-center" data-wow-delay=".6s">
                             <div class="w-100 m-0 p-0 text-left col-sm-12 col-md-12 col-lg-12 col-xl-8">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, 
-                                    modi eveniet? Aliquid sunt quia numquam nisi possimus aliquam rem vero 
-                                    quidem repudiandae, porro libero architecto voluptatum maxime ratione illum recusandae!
+                                    We are happly to answer any questions you have as regards the internship.<br>
+                                    For More Enquiries, Kindly Click the button to get in touch with us.
                                 </p>
                             </div>
                             <div class="w-100 m-0 p-0 text-right col-sm-12 col-md-12 col-lg-12 col-xl-4">
-                                <button>Contact Us</button>
+                                <button>Get In Touch</button>
                             </div>
                         </div>
                     </div>
@@ -521,8 +635,70 @@
 
         </main>
     
-        <footer class="mt-auto w-100 m-0 p-0">
-            footer
+        <footer class="mt-auto w-100 m-0 pt-5 pb-3">
+            <div class="m-0 p-0 containe">
+                <div class="row m-0 p-0 w-100 justify-content-between align-items-start">
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 m-0 p-0 py-4">
+                        <div class="d-flex flex-column col-12 m-0 p-0">
+                            <div class="d-flex flex-column col-12 m-0 p-0 content">
+                                <h3 class="m-0 mb-4">Quick Links</h3>
+                                <nav class="navbar navbar-expand-lg navbar-light m-0 p-0 flex-column content">
+                                    <a class="nav-item nav-link active pl-0" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link pl-0 mt-0" href="#">About</a>
+                                    <a class="nav-item nav-link pl-0" href="#">HNGi7</a>
+                                    <a class="nav-item nav-link pl-0" href="#">Mentors</a>
+                                    <a class="nav-item nav-link pl-0" href="#">Contact Us</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 m-0 p-0 py-4">
+                        <div class="d-flex flex-column col-12 m-0 p-0">
+                            <div class="d-flex flex-column col-12 m-0 p-0 contact content">
+                                <h3 class="m-0 mb-4">Contact Us</h3>
+                                <p>
+                                    3 Birrel Avenue, Sabo, Yaba, Lagos State
+                                </p>
+                                <p>
+                                    hello@hngtech.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 m-0 p-0 py-4">
+                        <div class="d-flex flex-column col-12 m-0 p-0">
+                            <div class="d-flex flex-column col-12 m-0 p-0 content">
+                                <h3 class="m-0 mb-4">Follow Us</h3>
+                                <div class="d-flex m-0 p-0 w-100 content">
+                                    <div class="icon_container">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    <div class="icon_container">
+                                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 m-0 p-0 py-4">
+                        <div class="d-flex flex-column col-12 m-0 p-0">
+                            <div class="d-flex flex-column col-12 m-0 p-0 content">
+                                <h3 class="m-0 mb-4">NewsLetter</h3>
+                                <form  class="d-flex flex-column m-0 p-0 content">
+                                    <label for="email">Subscribe to our NewsLetter</label>
+                                    <div class="m-0 p-0 d-flex">
+                                        <input class="m-0" type="email" name="email" placeholder="Your Email Here">
+                                        <button>&#8594;</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-0 p-0 pt-2 text-center">
+                    <p>&copy;2020. HNG Internship. All Rights Reserved</p>
+                </div>
+            </div>
         </footer>
     
     </div>

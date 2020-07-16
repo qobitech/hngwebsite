@@ -1,35 +1,10 @@
-@font-face{
-    font-family: 'Roboto';
-    src: url('../fonts/roboto/Roboto-Regular.ttf');
-}
-
-@font-face{
-    font-family: 'RobotoBold';
-    src: url('../fonts/roboto/Roboto-Bold.ttf');
-}
-
-@font-face{
-    font-family: 'OpenSans';
-    src: url('../fonts/opensans/OpenSans-Regular.ttf');
-}
-
-
-:root{
-    --header-font: 'RobotoBold';
-    --text-font: 'Roboto';
-    --button-font: 'OpenSans';
-    --main-color : #00AEFF;
-    --secondary-color2 : #24116a;
-    --link-color : #084482;
-    --light-color : #F4F4F4;
-    --bright-color : #fff;
-    --dark-color : #000;
-    --place-holder: #c4c4c4;
-    --input-stroke: #E5E5E5;
-}
-
 .main_con{
     min-height: 100vh !important;
+    padding-top: 100px !important;
+}
+
+.removepad{
+    padding: 0 !important;
 }
 
 .containe{
@@ -38,7 +13,7 @@
 }
 
 button{
-    border: none;
+    border: none !important;
     font-family: var(--button-font);
     font-size: 16px;
     color: var(--bright-color);
@@ -48,30 +23,77 @@ button{
     padding: 0 20px;
     border-radius: 5px;
     cursor: pointer;
+    outline: none !important;
 }
 
 label{
     font-size: 16px !important;
 }
 
-input{
+input,select{
     width: 100% !important;
     height: 60px !important;
     padding-left: 15px !important;
     border: 1px solid var(--input-stroke);
+    outline: none !important;
 }
 
 
-::placeholder{
+::placeholder,option{
     font-size: 16 !important;
     color: var(--place-holder);
 }
 
+h1{
+    font-size: 32px !important;
+    font-family: var(--header-font) !important;
+    color: var(--link-color) !important;
+}
 
+h2{
+    font-size: 25px !important;
+    font-family: var(--header-font) !important;
+    color: var(--main-color) !important;
+    line-height: 35px !important;
+}
+
+h3{
+    font-size: 21px !important;
+    font-family: var(--header-font) !important;
+    color: var(--link-color) !important;
+    line-height: 29px !important;
+}
+
+h4{
+    font-size: 18px !important;
+    font-family: var(--text-font) !important;
+    color: var(--dark-color) !important;
+    line-height: 29px !important;
+}
+
+h6{
+    font-size: 16px !important;
+    font-family: var(--header-font) !important;
+    color: var(--link-color) !important;
+    line-height: 29px !important;
+    cursor: pointer;
+    width: max-content;
+}
+
+p{
+    font-size: 16px !important;
+    font-family: var(--text-font) !important;
+    color: var(--dark-color) !important;
+    line-height: 29px !important;
+}
 
 @media only screen and (min-width: 768px){
     .containe{
         width: 80% !important;
+    }    
+
+    h2{
+        font-size: 32px !important;
     }    
 }
 
