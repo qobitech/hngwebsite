@@ -45,9 +45,11 @@ nav_left.addEventListener('click',()=>{
 })
 
 function autoSlider(){
-    partner_gallery.scrollBy({left:-(img.length * 300),behavior:'smooth'})
-    if(partner_gallery.scrollLeft < (img.length * 300) ){
-        partner_gallery.scrollBy({left:300,behavior:'smooth'})
+    if(window.innerWidth < 780){
+        partner_gallery.scrollBy({left:-(img.length * 300),behavior:'smooth'})
+        if(partner_gallery.scrollLeft < (img.length * 300) ){
+            partner_gallery.scrollBy({left:300,behavior:'smooth'})
+        }
     }
     setTimeout(()=>{autoSlider();},4000)
 }
@@ -96,7 +98,7 @@ window.addEventListener('scroll',()=>{
             header[i].classList.add('menuUp');
             // main_container[i].style.transition = `.4s ease-in-out`;
             // main_container[i].classList.add('removepad');
-        }else{
+        }else {
             header[i].classList.remove('menuUp');
             header[i].classList.add('menuDown');
             headerbg[i].style.transition = `.4s ease-in-out`;
