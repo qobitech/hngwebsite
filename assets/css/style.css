@@ -22,6 +22,8 @@ body{
 
 .activities_value h2{
     color: var(--bright-color) !important;
+    font-size: 21px !important;
+    font-family: var(--nav-font) !important;
 }
 
 .activities_value .expand_link{
@@ -35,14 +37,20 @@ body{
 }
 
 .activities_value .date_content h3{
+    font-family: var(--button-font) !important;
     color: var(--dark-color) !important;
+}
+
+.activities_value .year h3{
+    color: var(--year-color) !important;
+    font-size: 21px !important;
 }
 
 .value_content h3{
     margin-top: 30px !important;
 }
 
-.value_content p,.about_description p,.stakeholder_value p{
+.value_content p,.about_description p,.stakeholder_value p,.activities_value p{
     font-size: 14px !important;
     font-family: var(--text-font) !important;
     color: var(--dark-color) !important;
@@ -61,9 +69,15 @@ body{
     overflow-x: hidden;
 }
 
+.about_description .contain_content{
+    box-shadow: none;
+}
+
+.about_description .contain_content,
 .about_description .img_container{
     margin: 0 auto !important;
     width: 100%;
+
 }
 
 .about_description .img_container img{
@@ -89,7 +103,7 @@ body{
     justify-content: center;
     font-size: 15px !important;
     color: var(--main-color);
-    box-shadow: 0 0px 4px -1px rgba(0,0,0,.4);
+    box-shadow: var(--box-shadow);
     cursor: pointer;
     background: var(--bright-color);
     transition: .4s ease-in-out;
@@ -364,7 +378,7 @@ body{
     justify-content: center;
     border-radius: 50%;
     border: 2px solid var(--main-color);
-    box-shadow: 0 2px 4px -2px rgba(0,0,0,.3);
+    box-shadow: var(--box-shadow);
 }
 
 .sponsor img{
@@ -373,6 +387,11 @@ body{
 
 .sponsor h2, .sponsor h5{
     color: var(--bright-color);
+}
+
+.sponsor h5{
+    font-size: 16px !important;
+    font-family: var(--nav-font) !important;
 }
 
 .sponsor .call_action{
@@ -394,7 +413,7 @@ body{
         height: 784px !important;
     }
     .register_form form{
-        box-shadow: 0 4px 4px -2px rgba(0,0,0,.3);
+        box-shadow: var(--box-shadow);
     }
     .input_holder{
         width: 383px;
@@ -407,8 +426,9 @@ body{
         width: 600px !important;
     }
 
-    .about_description .img_container{
+    .about_description .contain_content{
         width: 90%;
+        box-shadow: var(--box-shadow);
     }
 
     /* HNGI7 STARTS */
@@ -459,7 +479,7 @@ body{
     }
     /* register form ends */
    
-    .about_description .img_container{
+    .about_description .contain_content{
         width: 95%;
     }
 
@@ -530,17 +550,17 @@ body{
     /* VALUE CONTENT STARTS */
 
     .value_content .bg_value{
-        height: 1047px !important;
+        height: 900px !important;
     }
     
     .value_content .first_value,
     .value_content .third_value{
         width: 1127px !important;
-        box-shadow: 0 2px 4px -2px rgba(0,0,0,.3);
+        box-shadow: var(--box-shadow);
     }
     .value_content .second_value{
         width: 1023px !important;
-        box-shadow: 0 2px 4px -2px rgba(0,0,0,.3);
+        box-shadow: var(--box-shadow);
     }
 
     /* VALUE CONTENT ENDS */
@@ -579,7 +599,7 @@ body{
         display: flex !important;
         width: 1150px !important;
         flex-direction: row !important;
-        box-shadow: 0 2px 4px -2px rgba(0,0,0,.3);
+        box-shadow: var(--box-shadow);
     }
     
     .activities_value .content{
