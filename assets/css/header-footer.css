@@ -13,6 +13,10 @@ header nav a{
     margin: 15px 0px !important;
 }
 
+header .company_name img{
+    width: 150px !important;
+}
+
 .maincolor{
     color: var(--bright-color) !important;
 }
@@ -125,22 +129,22 @@ footer .content{
 
 @keyframes comedown{
     0%{
-        /* transform:  */
-        /* translateY(-100%); */
+        transform: translateY(-100%);
         opacity: 0;
     }
     100%{
-        /* transform: translateY(0); */
+        transform: translateY(0);
         opacity: 1;
     }
 }
+
 @keyframes riseup{
     0%{
-        /* transform: translateY(0); */
+        transform: translateY(0);
         opacity: 1;
     }
     100%{
-        /* transform: translateY(-100%); */
+        transform: translateY(-100%);
         opacity: 0;
     }
 }
@@ -149,6 +153,9 @@ footer .content{
 @media only screen and (min-width: 768px){
     header .navbar{
         padding: 5px 0 !important;
+    }
+    header .company_name img{
+        width: 200px !important;
     }
 }
 
