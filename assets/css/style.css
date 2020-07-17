@@ -58,7 +58,7 @@ body{
 }
 
 .about_description .txt_container{
-    width: 280px;
+    width: 100%;
 }
 
 .about_description_content{
@@ -156,10 +156,13 @@ body{
     display: none;
 }
 
-.mission .img_container img{
-    width: 280px;
+.mission .img_container{
+    border: 1px solid black !important;
 }
 
+.mission .imgdesk{
+    width: 100% !important;
+}
 
 /* VALUE CONTENT STARTS */
 
@@ -170,8 +173,12 @@ body{
 .value_content .bg_value{
     position: absolute;
     background: var(--main-color);
-    height: 1047px !important;
     top: 150px;
+}
+.value_content .bg_value_brother{
+    position: absolute;
+    background: var(--link-color);
+    z-index: -200;
 }
 
 .value_content .first_value,
@@ -361,11 +368,17 @@ body{
 
 /* HNGI7 STARTS */
 
+.sponsor{
+    /* z-index: 100; */
+    position: relative;
+}
+
 .sponsor .bg{
     background: var(--link-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 100px !important;
 }
 
 .sponsor span{
@@ -424,6 +437,10 @@ body{
     }        
     .stakeholder_value .content_partners .partner_gallery{
         width: 600px !important;
+    }
+    
+    .about_description .txt_container{
+        width: 280px;
     }
 
     .about_description .contain_content{
@@ -485,7 +502,12 @@ body{
 
     /* VALUE CONTENT STARTS*/
     .value_content .bg_value{
-        height: 940px !important;
+        height: 780px !important;
+    }
+
+    .value_content .bg_value_brother{
+        top: 900px;
+        height:400px;
     }
     
     .first_value,.second_value,.third_value{
@@ -532,6 +554,9 @@ body{
     } 
 
     /* ACTIVITIES VALUE END */
+    .sponsor .bg{
+        padding-top: 50px !important;
+    }
 
 }
 
@@ -551,6 +576,10 @@ body{
 
     .value_content .bg_value{
         height: 900px !important;
+    }
+    .value_content .bg_value_brother{
+        top: 1050px;
+        height:290px;
     }
     
     .value_content .first_value,
@@ -640,5 +669,9 @@ body{
     }
     
     /* ACTIVITY CONTENT ENDS */    
+
+    .sponsor .bg{
+        padding-top: 0px !important;
+    }
 
 }

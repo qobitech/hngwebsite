@@ -14,7 +14,7 @@ header nav a{
 }
 
 header .company_name img{
-    width: 150px !important;
+    width: 100px !important;
 }
 
 .maincolor{
@@ -62,13 +62,36 @@ nav button img{
 }
 
 .menuDown{
-    animation: comedown .4s ease-in-out;
+    animation: comedown 0s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .menuUp{
-    animation: riseup .4s ease-in-out;
+    animation: riseup 0s ease-in-out;
     animation-fill-mode: forwards;
+}
+
+
+@keyframes comedown{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes riseup{
+    0%{
+        transform: translateY(0);
+        opacity: .4;
+    }
+    100%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
 }
 
 footer{
@@ -76,19 +99,25 @@ footer{
 }
 
 footer .icon_container{
-    border: 0px solid rgb(256,256,256,.2);
-    width: 32px !important;
-    height: 32px !important;
+    width: 40px !important;
+    height: 40px !important;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50% !important;
     margin: 0 !important;
+    margin: 0px 5px !important;
+    transition: .4s ease-in-out;
 }
 
+footer .icon_container:hover{
+    border: 1px solid var(--main-colorrgba);
+}
 
 footer .icon_container i{
     color: var(--main-color);
+    /* font-size: 20px !important; */
+    transition: .4s ease-in-out;
 }
 
 footer h3{
@@ -127,27 +156,6 @@ footer .content{
     text-align: center !important;
 }
 
-@keyframes comedown{
-    0%{
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes riseup{
-    0%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
 
 
 @media only screen and (min-width: 768px){
@@ -172,8 +180,9 @@ footer .content{
     header nav a{
         margin: 0 !important;
         margin-right: 25px !important;
+        font-size: 14px;
     }
-
+    
     header nav button{
         margin: 0px !important;
     }
@@ -184,8 +193,15 @@ footer .content{
         text-align: left !important;
     }
 
+    footer .icon_container{
+        margin: 0 !important;
+        margin-right: 20px !important;
+    }
+
 }
 
 @media only screen and (min-width: 1200px){
-
+    header nav a{
+        font-size: 16px;
+    }
 }

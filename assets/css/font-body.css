@@ -1,6 +1,7 @@
 .main_con{
     min-height: 100vh !important;
     padding-top: 100px !important;
+    transition: .4s ease-in-out !important;
 }
 
 .removepad{
@@ -88,6 +89,10 @@ p{
 }
 
 @media only screen and (min-width: 768px){
+    .main_con{
+        padding-top: 80px !important;
+    }
+
     .containe{
         width: 80% !important;
     }    
@@ -98,7 +103,10 @@ p{
 }
 
 @media only screen and (min-width: 1200px){
+    .main_con{
+        padding-top: 100px !important;
+    }
     .containe{
-        width: 1200px !important;
+        width: 1150px !important;
     }
 }

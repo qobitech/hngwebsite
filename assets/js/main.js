@@ -1,5 +1,6 @@
 var logoimg1 = `${window.location.href.substring(0,window.location.href.indexOf('/',window.location.href.indexOf('/')+2))}/assets/images/logo/image 2.png`;
 var logoimg2 = `${window.location.href.substring(0,window.location.href.indexOf('/',window.location.href.indexOf('/')+2))}/assets/images/logo/image 2white.png`;
+
 var main_container = document.getElementsByClassName('main_con');
 var expand = document.getElementsByClassName('expand_link');
 var activity_content = document.getElementsByClassName('activity_txt_content');
@@ -46,7 +47,7 @@ nav_left.addEventListener('click',()=>{
 })
 
 function autoSlider(){
-    if(window.innerWidth < 780){
+    if(window.innerWidth < 1200){
         partner_gallery.scrollBy({left:-(img.length * 300),behavior:'smooth'})
         if(partner_gallery.scrollLeft < (img.length * 300) ){
             partner_gallery.scrollBy({left:300,behavior:'smooth'})
@@ -69,7 +70,7 @@ for(let i=0; i < nav.length; i++){
                     tp[i].style.opacity = 1;
                     close_icon[i].classList.remove('hide');
                     hamburger_icon[i].classList.add('hide');
-                    headerbg[i].classList.add('increasenav');
+                    // headerbg[i].classList.add('increasenav');
                 }
                 if(nav[i].clientHeight < 300){
                 join_us_btn[i].style.transition = ".4s ease-in";            
@@ -78,9 +79,9 @@ for(let i=0; i < nav.length; i++){
                     tp[i].style.opacity = 0;
                     close_icon[i].classList.add('hide');
                     hamburger_icon[i].classList.remove('hide');
-                    headerbg[i].classList.remove('increasenav');
+                    // headerbg[i].classList.remove('increasenav');
                 }
-            },200)
+            },500)
         })
     }else{
         join_us_btn[i].style.transition = ".4s ease-in";            
@@ -93,19 +94,23 @@ window.addEventListener('scroll',()=>{
     var st = window.pageYOffset || document.documentElement.scrollTop;
     for(let i=0; i < header.length; i++){
         if(st > lastscrollup){
+            header[i].style.transition = `.4s ease-in-out`;
             header[i].classList.remove('menuDown');
-            header[i].classList.add('menuUp');
+            (st > 90) && header[i].classList.add('menuUp');
             main_container[i].style.transition = `.4s ease-in-out`;
-            main_container[i].classList.add('removepad');
+            // main_container[i].classList.add('removepad');
         }else {
+            header[i].style.transition = `.4s ease-in-out`;
             header[i].classList.remove('menuUp');
             header[i].classList.add('menuDown');
-            headerbg[i].style.transition = `.4s ease-in-out`;
-            headerbg[i].style.backgroundColor= st <= 0 ? `var(--bright-color)` : `var(--link-color)` ;
-            dot[i].src= st <= 0 ? logoimg1 : logoimg2 ;
+            
             main_container[i].style.transition = `.4s ease-in-out`;
-            main_container[i].classList.remove('removepad');
+            // main_container[i].classList.remove('removepad');
         }
+        headerbg[i].style.transition = `.4s ease-in-out`;
+        headerbg[i].style.backgroundColor= st <= 0 ? `var(--bright-color)` : `var(--link-color)` ;
+        dot[i].src= st <= 0 ? logoimg1 : logoimg2 ;
+        
     }
     for(let j = 0; j < header_a.length; j++){
         if(st <= 0){
@@ -118,4 +123,5 @@ window.addEventListener('scroll',()=>{
     }
 
     lastscrollup = st <= 0 ? 0 : st;
+    // console.log(st);
 })
