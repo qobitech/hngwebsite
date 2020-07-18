@@ -1,4 +1,4 @@
-.hero{background-image:url('../images/mobile/hero/Rectangle\ 50.png');background-position:center;background-repeat:no-repeat;background-size:cover;height:100vh !important;}
+.hero{background-image:url('../images/mobile/hero/Rectangle\ 50.png');background-position:center;background-repeat:no-repeat;background-size:cover;height:100% !important;}
 .activities_value h2{color:var(--bright-color) !important;font-size:21px !important;font-family:var(--nav-font) !important;}
 .activities_value .expand_link{color:var(--link-color) !important;}
 .activities_value .expand_content p{font-family:var(--header-font) !important;color:var(--link-color) !important;cursor:pointer;}
