@@ -20,12 +20,12 @@ nav button img{width:20px;}
 @keyframes riseup{0%{transform:translateY(0);opacity:.4;}
 100%{transform:translateY(-100%);opacity:0;}
 }
-footer{background:var(--light-color) !important;}
-footer .icon_container{width:40px !important;height:40px !important;display:flex;align-items:center;justify-content:center;border-radius:50% !important;margin:0 !important;margin:0px 5px !important;transition:.4s ease-in-out;border:1px solid var(--main-color);}
-/* footer .icon_container:hover{border:1px solid var(--main-colorrgba);} */
+footer{background:var(--secondary-color) !important;}
+footer .icon_container{width:40px !important;height:40px !important;display:flex;align-items:center;justify-content:center;border-radius:50% !important;margin:0 !important;margin:0px 5px !important;transition:.4s ease-in-out;}
+footer .icon_container:hover{border:1px solid var(--main-colorrgba);}
 footer .icon_container i{color:var(--main-color);transition:.4s ease-in-out;}
-footer h3{font-family:var(--button-font) !important;font-size:24px !important;color:var(--link-color) !important;}
-footer a,footer p,footer label{font-family:var(--button-font) !important;font-size:16px !important;color:var(--link-color) !important;}
+footer h3{font-family:var(--button-font) !important;font-size:24px !important;color:var(--bright-color) !important;}
+footer a,footer p,footer label{font-family:var(--nav-font) !important;font-size:16px !important;color:var(--bright-color) !important;}
 footer .contact{padding:0px !important;}
 footer input{width:183px !important;height:57px !important;border-radius:5px 0px 0px 5px !important;}
 footer button{width:76px !important;height:57px !important;border-radius:0px 5px 5px 0px !important;font-size:30px !important;font-weight:600px !important;}
