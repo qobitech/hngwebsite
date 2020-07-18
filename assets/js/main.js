@@ -15,10 +15,6 @@ var dot=document.getElementsByClassName('white_logo');
 var lastscrollup=0;
 for(let i=0;i<expand.length;i++){expand[i].addEventListener('click',()=>{if(activity_content[i].classList.contains('hide_element')){activity_content[i].classList.remove('hide_element');expand[i].innerHTML=`Hide Activity`;activity_content[i].scrollIntoView({behavior:'smooth'});}else{activity_content[i].classList.add('hide_element');expand[i].innerHTML=`View Activity`;date_content[i].scrollIntoView({behavior:'smooth'});}})}
 var img=document.getElementsByClassName('img_content');
-function autoSlider(){if(window.innerWidth<1200){partner_gallery.scrollBy({left:-(img.length*300),behavior:'smooth'})
-if(partner_gallery.scrollLeft<(img.length*300)){partner_gallery.scrollBy({left:300,behavior:'smooth'})}}
-setTimeout(()=>{autoSlider();},4000)}
-autoSlider();
 for(let i=0;i<nav.length;i++){
     if(window.innerWidth<780){
         navbtn[i].addEventListener('click',()=>{setTimeout(()=>{
