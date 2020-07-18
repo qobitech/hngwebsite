@@ -1,3 +1,14 @@
+*{box-sizing:border-box;}
+*::-moz-selection {background-color: transparent;
+    color: #000;
+}
+
+*::selection {
+    background-color: transparent;
+    color: #000;
+}
+html{scroll-behavior:smooth !important;}
+body{width:100%;margin:0;padding:0;}
 .main_con{min-height:100vh !important;padding-top:100px !important;transition:.4s ease-in-out !important;}
 .removepad{padding:0 !important;}
 .containe{width:90% !important;margin:0 auto !important;}
